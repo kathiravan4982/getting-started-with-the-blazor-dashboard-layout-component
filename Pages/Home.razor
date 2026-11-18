@@ -1,0 +1,38 @@
+@page "/"
+
+<SfDashboardLayout Columns="3" AllowDragging=false AllowResizing=true>
+    <DashboardLayoutPanels>
+        <DashboardLayoutPanel Column="0" SizeY="2" MinSizeY="1" MaxSizeY="2">
+            <HeaderTemplate>Panel1</HeaderTemplate>
+            <ContentTemplate>Content of Panel1</ContentTemplate>
+        </DashboardLayoutPanel>
+
+        <DashboardLayoutPanel Column="1" Row="0">
+            <HeaderTemplate>Panel2</HeaderTemplate>
+            <ContentTemplate>Content of Panel2</ContentTemplate>
+        </DashboardLayoutPanel>
+
+        <DashboardLayoutPanel Column="2">
+            <HeaderTemplate>Panel3</HeaderTemplate>
+            <ContentTemplate>Content of Panel3</ContentTemplate>
+        </DashboardLayoutPanel>
+
+        <DashboardLayoutPanel Column="1" Row="1" SizeX="2" MinSizeX="1" MaxSizeX="2">
+            <HeaderTemplate>Panel4</HeaderTemplate>
+            <ContentTemplate>Content of Panel4</ContentTemplate>
+        </DashboardLayoutPanel>
+    </DashboardLayoutPanels>
+</SfDashboardLayout>
+
+<style>
+    .e-panel-header
+    {
+        text-align: center;
+    }
+
+    .e-panel-content
+    {
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
